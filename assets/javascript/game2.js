@@ -1,4 +1,4 @@
-// *** VARIABLES ***
+// *** GLOBAL VARIABLES ***
 
 // An array of words that the computer can randomly select from
 var wordList = [
@@ -21,6 +21,11 @@ var wordList = [
     "kabayaki",
 ]
 
+// An array of letters the user is allowed to select from
+var alphabet = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ]
+
+// Word the computer chooses
+var word = "";
 // Wins - the number of times a user guessed all the letters in the word correctly
 var wins = 0;
 // Losses - the number of times a user expended all of their guesses
@@ -31,10 +36,6 @@ const guessesLeftMax = 15;
 var guessesLeft = 0;
 // Guesses Made - an array of letters the user guessed
 var guessesMade = "" ;
-// A blank version of the word the computer guessed
-var blankWord = [];
-// The index of the word that the computer guessed
-var wordListIndex = [];
 
 // *** FUNCTIONS ***
 
@@ -44,10 +45,10 @@ var wordListIndex = [];
     console.log(guessesLeft = guessesLeftMax);
 
     // Computer picks a random word from the word array above
-    computerPick = Math.floor((Math.random() * wordList.length));
-        console.log(wordList[computerPick]);
+    word = Math.floor((Math.random() * wordList.length));
+        console.log(wordList[word]);
         // Displays the chosen word with blanks
-
+        
 // Function of user guesses the word
 
     // User presses a letter keky
