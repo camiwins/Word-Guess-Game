@@ -1,14 +1,24 @@
-// GAME VARIABLES AND OBJECTS
+// *** GAME VARIABLES AND OBJECTS
 
-// Variable objects of all the words
+// Variable objects of all the words the computer can select
+
+// Variable for the current word the computer has selected
+
+// Variable for the word that's being guessed by the user
 
 // Variables that display the wins, losses, guesses and letters guessed
-    // Wins start at 0
-    // Losses start at 0
-    // Guesses start at 15
-    // Letters Guessed is blank
+    // Wins start at 0 - Counter for each time user guesses the word
+    // Losses start at 0 - Counter for losses once user makes max number of guessing attempts, aka errors
+    // Errors start at 15 - Each time a user can guess wrong
+    // Guessed is blank - For all the letters the cuser guessed
 
-// GAME FUNCTIONS AND KEY EVENTS
+// Variables for game states
+    // Game start
+    // Game over
+
+// *** GAME FUNCTIONS AND KEY EVENTS
+
+// Function that starts the game with default counters
 
 // Computer randomly chooses a word from the list mentioned above
     // Display a series of blanks that match the length of the word computer chose
